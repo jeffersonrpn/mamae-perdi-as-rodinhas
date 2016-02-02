@@ -1,0 +1,23 @@
+{
+  "name": "mamae-perdi-as-rodinhas",
+  "homepage": "http://jeffersonrpn.github.io/mamae-perdi-as-rodinhas",
+  "authors": [
+    "Jefferson Neves <jefferson.rpn@gmail.com>"
+  ],
+  "description": "Site do bloco carnavalesco Mamãe, perdi as rodinhas",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "carnaval",
+    "bicicleta"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
