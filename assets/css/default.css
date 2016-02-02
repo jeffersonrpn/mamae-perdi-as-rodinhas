@@ -1,13 +1,28 @@
-.bg_video {
+section {
+  margin: 0;
+  padding: 0;
+}
+.main-section {
+  background-color: #25064D;
+  height: 500px;
+}
+.video-section {
+  height: 500px;
+}
+.bg-video {
   display: block;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 300px;
   min-width: 100%;
   min-height: 100%;
   width: auto;
   height: auto;
   z-index: -1;
+}
+.sponsor-section {
+  background-color: #CD5427;
+  height: 500px;
 }
 
 #confetti{
