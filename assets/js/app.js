@@ -3,20 +3,15 @@ angular.module('mamae', []);
 angular.module('mamae').controller('MainController', function($scope) {
 
   $scope.showConfetti = false;
-  $scope.popConfetti = function() {
+  var popConfetti = function() {
+    alert('shake');
     $scope.showConfetti = !$scope.showConfetti;
   }
-
-  var myShakeEvent = new Shake({
-      threshold: 15
-  });
+  $scope.popConfetti = popConfetti;
 
   // Shake it off!
+  var myShakeEvent = new Shake({ threshold: 15 });
   myShakeEvent.start();
-  window.addEventListener('shake', shakeEventDidOccur, false);
-  function shakeEventDidOccur () {
-    alert('shake');
-    $scope.popConfetti();
-  }
+  window.addEventListener('shake', popConfetti, false);
 
 });
