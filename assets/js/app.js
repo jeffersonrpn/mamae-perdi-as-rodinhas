@@ -4,8 +4,8 @@ angular.module('mamae').controller('MainController', function($scope) {
 
   $scope.showConfetti = false;
   var popConfetti = function() {
-    alert('shake');
     $scope.showConfetti = !$scope.showConfetti;
+    alert('shake');
   }
   $scope.popConfetti = popConfetti;
 
