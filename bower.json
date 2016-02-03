@@ -19,5 +19,8 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "shake.js": "~1.2.2"
+  }
 }
