@@ -6,6 +6,7 @@ angular.module('mamae').controller('MainController', function($scope) {
   $scope.popConfetti = function() {
     $scope.showConfetti = !$scope.showConfetti;
   }
+
   var myShakeEvent = new Shake({
       threshold: 15
   });
@@ -14,6 +15,8 @@ angular.module('mamae').controller('MainController', function($scope) {
   myShakeEvent.start();
   window.addEventListener('shake', shakeEventDidOccur, false);
   function shakeEventDidOccur () {
+    alert('shake');
     $scope.popConfetti();
   }
+
 });
