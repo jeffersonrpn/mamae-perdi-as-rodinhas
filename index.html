@@ -11,23 +11,38 @@
 
   <canvas id="confetti" height='1' width='1'></canvas>
 
-  <video width="100%" class="bg-video" autoplay loop muted>
+  <video width="100%" class="bg-video" poster="img/fke/frame_video.jpg" autoplay loop muted>
     <source src="mamae.mp4" type="video/mp4">
     <source src="mamae.webm" type="video/webm">
+    <img src="assets/img/video-fallback.jpg" alt="Video fallback">
     Your browser does not support HTML5 video.
   </video>
 
-  <section class="main-section container-fluid">
-    <h1>Mamãe, perdi as rodinhas!</h1>
+  <section class="section main-section container-fluid text-center">
+    <h1 class="main-title">Mamãe, perdi as rodinhas!</h1>
   </section>
 
-  <section class="video-section">
+  <section class="section video-section text-center">
+    <a href="#" class="btn btn-default btn-circle btn-circle-default" data-toggle="modal" data-target="#video-modal"><span class="glyphicon glyphicon-play" aria-hidden="true"></span></a>
+  </section>
+  <div id="video-modal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/iEnyVCa6Rck?rel=0&amp;controls=0&amp;showinfo=0&autoplay=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <section class="section sponsor-section container-fluid text-center">
+    <h2 class="sub-title">Apoio</h2>
   </section>
 
-  <section class="sponsor-section container-fluid">
-    <h2>Apoio</h2>
-  </section>
-
+  <!-- Jquery v2.2.0 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <!-- Bootstrap v3.3.6 -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <!-- scripts -->

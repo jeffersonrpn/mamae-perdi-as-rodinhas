@@ -1,10 +1,16 @@
+html,
+body {
+}
 section {
   margin: 0;
   padding: 0;
 }
-.main-section {
-  background-color: #25064D;
+.section {
+  line-height: 500px;
   height: 500px;
+}
+.main-section {
+  background-color: #E3237D;
 }
 .video-section {
   height: 500px;
@@ -21,14 +27,45 @@ section {
   z-index: -1;
 }
 .sponsor-section {
-  background-color: #CD5427;
-  height: 500px;
+  background-color: #555BFC;
 }
-
 #confetti{
+  display: none;
   position: absolute;
   left: 0;
   top: 0;
   height: 100%;
   width: 100%;
+}
+
+.main-title {
+  color: #F7B63D;
+  line-height: 500px;
+}
+
+.sub-title {
+  color: #650D7F;
+  line-height: 250px;
+}
+
+.btn-circle {
+  padding: 6px 31px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  font-size: 3em;
+  line-height: 2.22;
+  border: none;
+  border-radius: 50%;
+}
+
+.btn-circle-default {
+  background-color: rgba(217, 0, 126, 0.8);
+  color: rgba(96, 190, 153, 0.8);
+}
+.btn-circle-default:visited,
+.btn-circle-default:active,
+.btn-circle-default:hover {
+  background-color: rgba(217, 0, 126, 1);
+  color: rgba(96, 190, 153, 1);
 }
