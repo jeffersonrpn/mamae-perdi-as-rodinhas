@@ -11,6 +11,7 @@ section {
 }
 .main-section {
   background-color: #E3237D;
+  background-image: url('../img/balls.png');
 }
 .video-section {
   height: 500px;
@@ -86,6 +87,9 @@ section {
 .main-title {
   color: #F7B63D;
   line-height: 500px;
+  font-family: 'Monoton', cursive;
+  text-transform: uppercase;
+  font-size: 5em;
 }
 
 .sub-title {
