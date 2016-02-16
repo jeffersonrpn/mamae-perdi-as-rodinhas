@@ -1,5 +1,6 @@
 html,
 body {
+  font-family: 'Montserrat', sans-serif;
 }
 section {
   margin: 0;
@@ -12,15 +13,17 @@ section {
 .main-section {
   background-color: #E3237D;
   background-image: url('../img/balls.png');
+  height: 100vh;
 }
 .video-section {
   height: 500px;
+  background-color: rgba(88, 22, 125, 0.5) ;
 }
 .bg-video {
   display: block;
   position: absolute;
   right: 0;
-  top: 300px;
+  top: 650px;
   min-width: 100%;
   min-height: 100%;
   width: auto;
@@ -39,10 +42,54 @@ section {
   width: 100%;
 }
 
-.pop-cone-wrapper {
+.float-btn-wrapper {
   position: fixed;
   bottom: 0;
   right: 50%;
+}
+.next-btn {
+  left: 50%;
+  margin-left: -15px;
+  position: absolute;
+  bottom: -160px;
+  font-size: 2em;
+}
+.next-btn a {
+  color: #fff;
+}
+.main-title {
+  color: #F7B63D;
+  font-family: 'Monoton', sans-serif;
+  text-transform: uppercase;
+  font-size: 5em;
+  margin-top: 100px;
+}
+
+.sub-title {
+  color: #650D7F;
+  line-height: 250px;
+}
+
+.btn-circle {
+  padding: 6px 31px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  font-size: 3em;
+  line-height: 2.22;
+  border: none;
+  border-radius: 50%;
+}
+
+.btn-circle-default {
+  background-color: rgba(217, 0, 126, 0.8);
+  color: rgba(96, 190, 153, 0.8);
+}
+.btn-circle-default:visited,
+.btn-circle-default:active,
+.btn-circle-default:hover {
+  background-color: rgba(217, 0, 126, 1);
+  color: rgba(96, 190, 153, 1);
 }
 
 /* Animations */
@@ -80,41 +127,21 @@ section {
     transform: none;
   }
 }
+@keyframes updown {
+  from {
+    transform: translateY(-15px);
+  }
+  50% {
+    transform: none;
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
 
 .wobble {
   animation-name: wobble;
 }
-.main-title {
-  color: #F7B63D;
-  line-height: 500px;
-  font-family: 'Monoton', cursive;
-  text-transform: uppercase;
-  font-size: 5em;
-}
-
-.sub-title {
-  color: #650D7F;
-  line-height: 250px;
-}
-
-.btn-circle {
-  padding: 6px 31px;
-  width: 100px;
-  height: 100px;
-  text-align: center;
-  font-size: 3em;
-  line-height: 2.22;
-  border: none;
-  border-radius: 50%;
-}
-
-.btn-circle-default {
-  background-color: rgba(217, 0, 126, 0.8);
-  color: rgba(96, 190, 153, 0.8);
-}
-.btn-circle-default:visited,
-.btn-circle-default:active,
-.btn-circle-default:hover {
-  background-color: rgba(217, 0, 126, 1);
-  color: rgba(96, 190, 153, 1);
+.updown {
+  animation-name: updown;
 }
