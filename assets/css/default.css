@@ -30,6 +30,13 @@ section {
   padding-top: 100px;
   margin-bottom: -20px;
 }
+@media (max-width: 768px) {
+  .main-section {
+    height: 100vh;
+    padding-top: 40px;
+    margin-bottom: -20px;
+  }
+}
 .main-section h2 {
   color: #F7B63D;
 }
@@ -46,6 +53,7 @@ section {
     background-position: 80%;
   }
   .video-section h2 {
+    padding-top: 100px;
     text-shadow: 2px 2px 0px rgba(88, 22, 125, 1);
   }
 }
@@ -140,6 +148,12 @@ footer > span.glyphicon {
 .sub-title {
   padding-top: 100px;
   padding-bottom: 50px;
+}
+@media (max-width: 768px) {
+  .sub-title {
+    padding-top: 20px;
+    padding-bottom: 5px;
+  }
 }
 .btn {
   border: none;
