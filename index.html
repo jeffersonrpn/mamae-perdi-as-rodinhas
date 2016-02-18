@@ -78,7 +78,9 @@
         </div>
         <div class="col-sm-12 col-md-4 text-center">
           <h3>Quem apoia essa ideia</h3>
-          <a href="https://www.facebook.com/novosurbanoscg/"><img src="assets/img/novosurbanos.jpg" width="100px" height="100px" alt="Novos Urbanos" class="logo-link"></a>
+          <a href="https://www.facebook.com/novosurbanoscg/">
+            <img src="assets/img/novosurbanos.jpg" width="100px" height="100px" alt="Novos Urbanos" class="logo-link">
+          </a>
         </div>
       </div>
     </div>
@@ -88,7 +90,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4 col-md-offset-4">
-          <img src="assets/img/bikecestinha.svg" alt="Bike Carnaval" width="100%">
+          <img src="assets/img/bikecestinha.svg" alt="Bike Carnaval" width="100%" class="animated fadeInLeft">
         </div>
       </div>
     </div>
@@ -97,7 +99,6 @@
   <footer class="section text-center">
     Website feito com <span class="glyphicon glyphicon-heart"></span> por <a href="https://github.com/jeffersonrpn">Jefferson Neves</a>, <a href="https://www.behance.net/msouto">Mariana Souto</a> e <a href="#">Pâmela Oldufre</a>
   </footer>
-
   <!-- vendor -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
@@ -108,5 +109,23 @@
   <script src="assets/js/app.js"></script>
   <!-- addthis -->
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5334b4ae4e452545"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(document).on("scroll", onScroll);
+      $('a[href^="#"]').on('click', function (e) {
+          e.preventDefault();
+          $(document).off("scroll");
+          var target = this.hash, menu = target;
+          $target = $(target);
+          $('html, body').stop().animate({
+              'scrollTop': $target.offset().top+2
+          }, 500, 'swing', function () {
+              window.location.hash = target;
+              $(document).on("scroll", onScroll);
+          });
+      });
+  });
+  function onScroll(event){}
+  </script>
 </body>
 </html>

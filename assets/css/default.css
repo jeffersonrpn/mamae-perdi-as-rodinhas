@@ -204,6 +204,9 @@ footer > span.glyphicon {
     transform: none;
   }
 }
+.wobble {
+  animation-name: wobble;
+}
 @keyframes updown {
   from {
     transform: translateY(-15px);
@@ -215,10 +218,20 @@ footer > span.glyphicon {
     transform: translateY(-15px);
   }
 }
-
-.wobble {
-  animation-name: wobble;
-}
 .updown {
   animation-name: updown;
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.fadeInLeft {
+  animation-name: fadeInLeft;
 }
