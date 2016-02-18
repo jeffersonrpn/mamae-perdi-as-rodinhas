@@ -24,7 +24,11 @@ section {
   background-color: #E3237D;
   background-image: url('../img/balls.png');
   height: 100vh;
+  padding-top: 100px;
   margin-bottom: -20px;
+}
+.main-section h2 {
+  color: #F7B63D;
 }
 .video-section {
   background-color: rgba(88, 22, 125, 0.5);
@@ -45,6 +49,7 @@ section {
   z-index: -1;
 }
 .sponsor-section {
+  padding-top: 100px;
   padding-bottom: 100px;
   background-color: #555BFC;
 }
@@ -107,7 +112,7 @@ footer > span.glyphicon {
   font-family: 'Monoton', sans-serif;
   text-transform: uppercase;
   font-size: 5em;
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 .sub-title {
