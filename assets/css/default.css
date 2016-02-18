@@ -40,6 +40,15 @@ section {
 .video-section h2 {
   color: #F7B63D;
 }
+@media (max-width: 768px) {
+  .video-section {
+    background: url('../img/video-fallback.jpg');
+    background-position: 80%;
+  }
+  .video-section h2 {
+    text-shadow: 2px 2px 0px rgba(88, 22, 125, 1);
+  }
+}
 .bg-video {
   display: block;
   position: absolute;
@@ -75,6 +84,11 @@ footer {
   padding-bottom: 15px;
   font-size: 1.1rem;
   background-color: #F7B63D;
+}
+@media (max-width: 768px) {
+  footer {
+  font-size: 1.5rem;
+  }
 }
 footer > a {
   color: #58167D;
@@ -117,7 +131,12 @@ footer > span.glyphicon {
   font-size: 5em;
   margin-top: 150px;
 }
-
+@media (max-width: 768px) {
+  .main-title {
+    margin-top: 0;
+    font-size: 2.5em;
+  }
+}
 .sub-title {
   padding-top: 100px;
   padding-bottom: 50px;
