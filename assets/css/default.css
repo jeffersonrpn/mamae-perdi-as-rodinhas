@@ -18,6 +18,9 @@ section {
   margin: 0;
   padding: 0;
 }
+.modal-lg {
+  width: 80%;
+}
 .section {
 }
 .main-section {
